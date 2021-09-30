@@ -5,6 +5,7 @@
   "dependencies": {
     "UiPath.Credentials.Activities": "[2.0.0]",
     "UiPath.Excel.Activities": "[2.11.0-preview]",
+    "UiPath.Mail.Activities": "[1.10.5]",
     "UiPath.System.Activities": "[21.6.1-preview]",
     "UiPath.UIAutomation.Activities": "[21.6.1-preview]"
   },
