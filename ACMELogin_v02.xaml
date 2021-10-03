@@ -13,7 +13,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>943,2192</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>821,825</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ACME_Login_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="35">
@@ -82,13 +82,13 @@
       <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="ACME_Login" sap:VirtualizedContainerService.HintSize="953,2127" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="ACME_Login" sap:VirtualizedContainerService.HintSize="480,760" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="911,306" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,306" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <TryCatch.Try>
         <ui:GetRobotCredential TimeoutMS="{x:Null}" AssetName="Credential" DisplayName="Get Credential" sap:VirtualizedContainerService.HintSize="284,79" sap2010:WorkflowViewState.IdRef="GetRobotCredential_1" Password="[out_ACME_Password]" Username="[out_ACME_Username]" />
       </TryCatch.Try>
@@ -113,7 +113,7 @@
         </Catch>
       </TryCatch.Catches>
     </TryCatch>
-    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="911,1689" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,322" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
         <ui:OpenBrowser CommunicationMethod="{x:Null}" Hidden="{x:Null}" NewSession="{x:Null}" Private="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Open Browser" sap:VirtualizedContainerService.HintSize="873,1484" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" Url="[URL_Acme]">
           <ui:OpenBrowser.Body>
@@ -224,6 +224,22 @@
           </ui:OpenBrowser.Body>
         </ui:OpenBrowser>
       </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,160" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <ui:LogMessage Message="{x:Null}" DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Warn" />
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
     </TryCatch>
   </Sequence>
 </Activity>
